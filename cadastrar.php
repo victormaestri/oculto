@@ -1,3 +1,9 @@
+<?php
+include 'lib/conexao.php';
+
+$usuarios = mysql_query("SELECT * FROM usuarios");
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -110,5 +116,21 @@ return true;
     </tr>
   </table>
 </form>
+<div>
+	Lista de usuarios:<br/>
+	<table border="1" style="width:50%;border-collapse:collapse;">
+		<tr>
+			<th>ID</th>
+			<th>NOME</th>
+			<th>EMAIL</th>
+		<?php while ($usuario = mysql_fetch_assoc($usuarios)) { ?>
+		<tr>
+			<td><?php echo $usuario['id'];?></td>
+			<td><?php echo $usuario['nome'];?></td>
+			<td><?php echo $usuario['email'];?></td>
+		</tr>
+		<?php } ?>
+	</table>
+</div>
 </body>
 </html>
