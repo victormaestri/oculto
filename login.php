@@ -7,6 +7,22 @@
 <link rel="stylesheet" type="text/css" href="css/padrao.css" />
 </head>
 <body>
-<a href="login.php">Fazer login</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="cadastrar.php">Cadastrar</a>
+<form method="post" action="verifica.php">
+	<table>
+		<tr>
+			<td>
+				<label>Usuário:</label><br/>
+				<input type="text" name="usuario" id="usuario" value="" />
+			</td>
+			<td>
+				<label>Senha:</label><br/>
+				<input type="password" name="password" id="password" value="" />
+			</td>
+			<td>
+				<input type="submit" value="ENTRAR" />
+			</td>
+		</tr>
+	</table>
+</form>
 </body>
 </html>
