@@ -16,3 +16,70 @@
 	background:#009dff;
 	color:#fff;
 }
+
+body {
+	background:#f1f1f1;
+}
+
+#conteudo {
+	width:980px;
+	margin:0 auto;
+}
+
+#conteudo h1 {
+	font-size: 32px;
+	color: #b1b1b1;
+	text-shadow: 1px 1px 0 #fff;
+	font-family: tahoma;
+	text-align: center;
+	margin: 50px 0;
+}
+
+#login {
+	float: left;
+	width: 439px;
+	border-right: 1px dashed #d1d1d1;
+	height: 300px;
+	padding-right: 50px;
+}
+
+#cadastro {
+	float: left;
+	width: 440px;
+	padding-left: 50px;
+}
+
+input[type='submit'] {
+	background: #8A8A8A;
+	border: none;
+	color: #fff;
+	min-width: 150px;
+	padding: 10px;
+	font-size: 12px;
+	cursor:pointer;
+}
+
+input[type='submit']:hover {
+	background: #747474;
+}
+
+input[type='text'], input[type='password'] {
+	padding:7px;
+	border:1px solid #d1d1d1;
+	color:#999;
+	font-size:14px;
+}
+
+input[type='text']:hover, input[type='password']:hover {
+	border:1px solid #bdbdbd;
+}
+
+input[type='text']:focus, input[type='password']:focus {
+	border:1px solid #949494;
+}
+
+label {
+	color:#666;
+	font-weight: bold;
+	font-size: 14px;
+}
